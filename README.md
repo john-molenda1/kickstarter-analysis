@@ -11,9 +11,16 @@ fundraising campaigns.
 ### Analysis
 I performed my analysis by adding additional columns to the original kickstarter sheet (i.e. adding a years column using the =Year() function, average donation by dividing pledge amount by number of backers, and using this function: =(((J2/60)/60)/24)+DATE(1970,1,1) to convert the launch date and deadlines into readable dates.
 
+![image](https://user-images.githubusercontent.com/92773195/138572650-6f224a0b-e032-4a48-a79c-2d53098e20bc.png)
+
 After that, I inserted pivot tables to show Louise how outcomes of fundraisers were attributed to goal amounts, outcomes were influenced by launch date, and a descriptive statistics worksheet where I showed her the mean, median, standard deviation, lower/upper quartiles, and the IQR of both goals and means for the successful and failed fundraisers. 
 
+![image](https://user-images.githubusercontent.com/92773195/138572614-82941dbb-7a6f-4a63-895d-e7ccfd98c474.png)
+![image](https://user-images.githubusercontent.com/92773195/138572683-caa45160-fc92-4f4f-87e5-816ea3680034.png)
+
 From there, I created line charts and bar charts from the pivot tables to best visualize how goal amounts and months of the year impacted the eventual outcome of each fundraiser. 
+![image](https://user-images.githubusercontent.com/92773195/138572701-6f8197d0-d581-45d5-aa39-1a0c2e5671af.png)
+![image](https://user-images.githubusercontent.com/92773195/138572709-18278293-f670-4113-a999-1f57b4dd2ed5.png)
 
 ### Challenges
 My biggest difficulty came in the 'Outcomes Based on Goals' Sheet. The number of sucessful and failed plays weren't displaying correctly and I couldn't figure out why. After much trial and tribulation, I realized my issue was that when first filling out the original =COUNTIFS() function, I had selected the wrong column in the Kickstarter worksheet, and when I autopopulated the rest of the column by clicking the bottom right corner of the cell, the issue was present in all the cells. That was really the only major issue I encountered that took a while to fix, but I could forsee an issue in the Edinburgh Research sheet by having selected the wrong lookup value or table array in my VLOOKUP function. 
